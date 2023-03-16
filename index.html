@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>Hamburger</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+.menu {
+  display: none;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.p{
+  text-indent: 50px
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  width:100%;
+  height:100%;
+}
+  
+html {
+  scroll-behavior: smooth;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.floating{
+	animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.fade-in{
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+</style>
+</head>
+<body>
+
+
+<!-- Menu (sit on top) -->
+<header>
+	<div class="w3-top w3-opacity ">
+  <div class="w3-row w3-padding w3-white">
+    <div class="w3-col s3">
+      <a href="#home" class="w3-button w3-block w3-white">HOME</a>
+    </div>
+    <div class="w3-col s3">
+       <a href="#about" class="w3-button w3-block w3-white">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#more" class="w3-button w3-block w3-white">MORE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#comment" class="w3-button w3-block w3-white">CMTS.</a>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- banner -->
+<div class="bgimg w3-display-container " id="home">
+  <div class="w3-display-middle w3-padding-large"><h1 class="w3-text-white fade-in" style="font-size:50px">Hamburger</h1>
+  </div>
+  <div class = "w3-display-bottommiddle w3-padding-large">
+  	<a href="#about">
+    <img src="https://img.icons8.com/small/32/ffffff/sort-down.png"/ class="arrow down w3-display-center floating"></i></a>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+<div class="w3-container" id="about">
+    <h1 class="w3-center">About Hamburger</h1><br>
+      <h5 class="w3-center">Tradition since 1758</h5>
+  <div class="p">
+    <p>  So, where was the hamburger invented?
+When German immigrants began arriving in New York and Chicago, many earned a living by opening restaurants. Menus frequently featured Hamburg steak, an Americanized version of the German offering. It was often the most expensive dish on the menu. During the Industrial Revolution, factory workers were served Hamburg steak from food carts. They proved difficult to eat while standing, so one creative cook sandwiched the meat patty between two slices of bread (the culinary innovator’s name has sadly been lost to history).</p>
+    <p>  Thus, the Hamburg sandwich was born, an evolution that boosted this food’s popularity all over the country.</p>
+    <br>
+    <img src="https://realfood.tesco.com/media/images/RFO-Main-472x310-Burger-eb01fe5f-d149-46cf-b52a-82fa1b4fe3c0-0-472x310.jpg" class="zoom center w3-round w3-image w3-opacity-min ">
+    
+</div>
+<br>
+<hr>
+  
+  <!-- More Section -->
+  <div class="w3-row w3-padding-64" id="more">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Claims of inventions</h1><br>
+      
+    
+      <h4 class="w3-center">Charlie Nagreen</h4>
+      <p class="w3-text-grey p">One of the earliest claims comes from Charlie Nagreen, who in 1885 sold a meatball between two slices of bread at the Seymour Fair now sometimes called the Outagamie County Fair. The Seymour Community Historical Society of Seymour, Wisconsin, credits Nagreen, now known as "Hamburger Charlie", with the invention. Nagreen was fifteen when he was reportedly selling pork sandwiches at the 1885 Seymour Fair, made so customers could eat while walking. The Historical Society explains that Nagreen named the hamburger after the Hamburg steak with which local German immigrants were familiar.</p><br>
+</div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://myareanetwork-photos.s3.amazonaws.com/editorphotos/f/36588_1566582870.jpg" class="zoom w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+  <hr>
+
+  <!-- Comment Section -->
+  <div class="w3-container w3-padding-16" id="comment">
+    <h1>Comment</h1><br>
+    <p>Please add any comments you have for improving the website. I welcome suggestions on specific areas for improvements, features you would like to see added to the site, and examples of what you consider good websites.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-animate-input w3-padding-16" type="text" style="width:50%" placeholder="Name" required name="Name"><br>
+      <input class="w3-input w3-animate-input w3-padding-16" type="text" style="width:50%" placeholder="Comment" required name="Comment"><br>
+      <p><button class="w3-button w3-black w3-section" type="submit">SEND</button></p>
+    </form>
+  </div>
+  
+<!-- End page content --></div>
+
+</div>
+
+
+
+</div>
+<!-- Footer -->
+<footer class="w3-row w3-center w3-black w3-padding-32">
+  <p>Created by Yeoh Shi Min</p>
+  <p>Original sources :  <a href="https://en.wikipedia.org/wiki/Hamburger" title="Wikipedia" target="_blank" class="w3-hover-text-green">Wikipedia</a></p>
+</footer>
+</body></html>
